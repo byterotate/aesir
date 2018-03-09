@@ -1,4 +1,4 @@
-import * as chalk from 'chalk'
+import chalk from 'chalk'
 
 export const info = str => console.info(`${chalk.green('[info]')}${str}`)
 

@@ -16,7 +16,7 @@ const packageLockFilePath = Path.resolve(cwd, './package-lock.json')
 const eslintrcPath = Path.resolve(cwd, './.eslintrc.js')
 
 const defaultConfig = mergeDeepWith(eslintBaseConfig, {
-  extends: [ '@aesir/eslint-config-mandatory' ]
+  extends: [ 'aesir-eslint-config-mandatory' ]
 })
 
 function removeDependencInLockFile (packageLockFilePath, dependences) {

@@ -20,10 +20,10 @@ export function genarateConfig(command) {
     config = mergeDeepWith(config, formatConfig)
   }
   if ((command & 2) === 2) {
-    config = mergeDeepWith(config, {extends:['@aesir/eslint-config-mandatory']})
+    config = mergeDeepWith(config, {extends:['aesir-eslint-config-mandatory']})
   }
   if ((command & 4) === 4) {
-    config = mergeDeepWith(config, {extends:['@aesir/eslint-config-recommand']})
+    config = mergeDeepWith(config, {extends:['aesir-eslint-config-recommand']})
   }
   Fs.writeFileSync(path, JSON.stringify(config))
   return [path, config]
