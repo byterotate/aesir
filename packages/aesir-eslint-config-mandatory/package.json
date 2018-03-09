@@ -1,0 +1,30 @@
+{
+  "name": "@aesir/eslint-config-mandatory",
+  "version": "0.0.1",
+  "description": "eslint strict",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "code",
+    "eslint",
+    "check",
+    "checker"
+  ],
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.19.0"
+  },
+  "author": "guoyunlong@didichuxing.com",
+  "license": "ISC"
+}

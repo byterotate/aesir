@@ -1,0 +1,313 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+
+  "env": {
+    "es6": true,
+    "node": true
+  },
+
+  "plugins": ["import", "node", "promise", "standard"],
+  "globals": {
+    "document": false,
+    "navigator": false,
+    "window": false
+  },
+  "rules": {
+    "array-callback-return": "warn",
+    "block-scoped-var": "warn",
+    "class-methods-use-this": [
+      "warn",
+      {
+        "exceptMethods": []
+      }
+    ],
+    "consistent-return": "warn",
+    "default-case": [
+      "warn",
+      {
+        "commentPattern": "^no default$"
+      }
+    ],
+    "dot-notation": [
+      "warn",
+      {
+        "allowKeywords": true
+      }
+    ],
+    "guard-for-in": "warn",
+    "no-case-declarations": "warn",
+    "no-else-return": "warn",
+    "no-empty-function": [
+      "warn",
+      {
+        "allow": ["arrowFunctions", "functions", "methods"]
+      }
+    ],
+    "no-extra-label": "warn",
+    "no-loop-func": "warn",
+    "no-param-reassign": [
+      "warn",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "acc",
+          "e",
+          "ctx",
+          "req",
+          "request",
+          "res",
+          "response",
+          "$scope"
+        ]
+      }
+    ],
+    "no-restricted-properties": [
+      "warn",
+      {
+        "object": "arguments",
+        "property": "callee",
+        "message": "arguments.callee is deprecated"
+      },
+      {
+        "property": "__defineGetter__",
+        "message": "Please use Object.defineProperty instead."
+      },
+      {
+        "property": "__defineSetter__",
+        "message": "Please use Object.defineProperty instead."
+      },
+      {
+        "object": "Math",
+        "property": "pow",
+        "message": "Use the exponentiation operator (**) instead."
+      }
+    ],
+    "no-script-url": "warn",
+    "no-unused-labels": "warn",
+    "no-useless-concat": "warn",
+    "no-void": "warn",
+    "radix": "warn",
+    "vars-on-top": "warn",
+    "no-await-in-loop": "warn",
+    "no-empty": "warn",
+    "no-extra-semi": "warn",
+    "no-prototype-builtins": "warn",
+    "arrow-body-style": [
+      "warn",
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": false
+      }
+    ],
+    "no-confusing-arrow": [
+      "warn",
+      {
+        "allowParens": true
+      }
+    ],
+    "no-var": "warn",
+    "object-shorthand": [
+      "warn",
+      "always",
+      {
+        "ignoreConstructors": false,
+        "avoidQuotes": true
+      }
+    ],
+    "prefer-arrow-callback": [
+      "warn",
+      {
+        "allowNamedFunctions": false,
+        "allowUnboundThis": true
+      }
+    ],
+    "prefer-const": [
+      "warn",
+      {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": true
+      }
+    ],
+    "prefer-numeric-literals": "warn",
+    "prefer-rest-params": "warn",
+    "prefer-spread": "warn",
+    "prefer-template": "warn",
+    "require-yield": "warn",
+    "import/no-named-as-default": "warn",
+    "import/no-named-as-default-member": "warn",
+    "import/no-extraneous-dependencies": [
+      "warn",
+      {
+        "devDependencies": [
+          "test/**",
+          "tests/**",
+          "spec/**",
+          "**/__tests__/**",
+          "test.{js,jsx}",
+          "test-*.{js,jsx}",
+          "**/*.{test,spec}.{js,jsx}",
+          "**/webpack.config.js",
+          "**/webpack.config.*.js",
+          "**/rollup.config.js",
+          "**/rollup.config.*.js",
+          "**/gulpfile.js",
+          "**/gulpfile.*.js",
+          "**/Gruntfile",
+          "**/protractor.conf.*.js"
+        ],
+        "optionalDependencies": false
+      }
+    ],
+    "import/no-mutable-exports": "warn",
+    "import/no-amd": "warn",
+    "import/newline-after-import": "warn",
+    "import/prefer-default-export": "warn",
+    "import/no-absolute-path": "warn",
+    "import/no-dynamic-require": "warn",
+    "import/no-named-default": "warn",
+    "global-require": "warn",
+    "strict": ["warn", "never"],
+    "linebreak-style": ["warn", "unix"],
+    "lines-around-directive": [
+      "warn",
+      {
+        "before": "always",
+        "after": "always"
+      }
+    ],
+    "max-len": [
+      "warn",
+      100,
+      2,
+      {
+        "ignoreUrls": true,
+        "ignoreComments": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-bitwise": "warn",
+    "no-continue": "warn",
+    "no-lonely-if": "warn",
+    "no-multi-assign": ["warn"],
+    "no-nested-ternary": "warn",
+    "no-plusplus": "warn",
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "ForInStatement",
+        "message": "for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array."
+      },
+      {
+        "selector": "ForOfStatement",
+        "message": "iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations."
+      },
+      {
+        "selector": "LabeledStatement",
+        "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
+      },
+      {
+        "selector": "WithStatement",
+        "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+      }
+    ],
+    "no-spaced-func": "warn",
+    "no-underscore-dangle": [
+      "warn",
+      {
+        "allowAfterThis": false
+      }
+    ],
+    "operator-assignment": ["warn", "always"],
+    "no-restricted-globals": [
+      "warn",
+      "addEventListener",
+      "blur",
+      "close",
+      "closed",
+      "confirm",
+      "defaultStatus",
+      "event",
+      "external",
+      "defaultstatus",
+      "find",
+      "focus",
+      "frameElement",
+      "frames",
+      "history",
+      "innerHeight",
+      "innerWidth",
+      "length",
+      "location",
+      "locationbar",
+      "menubar",
+      "moveBy",
+      "moveTo",
+      "name",
+      "onblur",
+      "onerror",
+      "onfocus",
+      "onload",
+      "onresize",
+      "onunload",
+      "open",
+      "opener",
+      "opera",
+      "outerHeight",
+      "outerWidth",
+      "pageXOffset",
+      "pageYOffset",
+      "parent",
+      "print",
+      "removeEventListener",
+      "resizeBy",
+      "resizeTo",
+      "screen",
+      "screenLeft",
+      "screenTop",
+      "screenX",
+      "screenY",
+      "scroll",
+      "scrollbars",
+      "scrollBy",
+      "scrollTo",
+      "scrollX",
+      "scrollY",
+      "self",
+      "status",
+      "statusbar",
+      "stop",
+      "toolbar",
+      "top"
+    ],
+    "no-shadow": "warn",
+    "node/no-deprecated-api": "warn",
+    "node/process-exit-as-throw": "warn",
+    "promise/param-names": "warn",
+    "standard/array-bracket-even-spacing": ["warn", "either"],
+    "standard/computed-property-even-spacing": ["warn", "even"],
+    "standard/no-callback-literal": "warn",
+    "standard/object-curly-even-spacing": ["warn", "either"],
+    "accessor-pairs": "warn",
+    "handle-callback-err": "warn",
+    "no-compare-neg-zero": "warn",
+    "no-constant-condition": "warn",
+    "no-negated-in-lhs": "warn",
+    "no-unmodified-loop-condition": "warn",
+    "no-useless-call": "warn",
+    "prefer-promise-reject-errors": [
+      "warn",
+      {
+        "allowEmptyReject": true
+      }
+    ]
+  }
+}
