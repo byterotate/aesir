@@ -1,0 +1,24 @@
+{
+  "name": "aesir",
+  "version": "0.0.1",
+  "description": "code quality tools and config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucker2046/aesir.git"
+  },
+  "keywords": [
+    "tools",
+    "code",
+    "quality"
+  ],
+  "author": "guoyunlong1992@outlook.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucker2046/aesir/issues"
+  },
+  "homepage": "https://github.com/lucker2046/aesir#readme"
+}
