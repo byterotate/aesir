@@ -29,7 +29,7 @@ npm install aesir-cli
 ### 静态代码分析
 
 ```bash
- >themis lint
+ >aesir lint
 
   Usage: lint [options] [patterns...]
 
@@ -48,7 +48,7 @@ npm install aesir-cli
 ### 代码格式化
 
 ```bash
- >themis format
+ >aesir format
  Usage: format [options] [patterns...]
 
   格式化操作
@@ -91,3 +91,7 @@ npm install aesir-cli
 ### 0.0.2
 
 * [fix] README modify
+
+### 0.0.3
+
+* [fix] use 'aesir' instead of 'themis'

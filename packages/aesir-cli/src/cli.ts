@@ -52,8 +52,8 @@ export async function initMain () {
     const packageJson = JSON.parse(packageStr)
     const finalPackageJson = R.mergeDeepRight(packageJson, {
       scripts: {
-        "precommit": "themis lint -p -s -m in-staged",
-        "format:in-staged": "themis format -S -m in-staged"
+        "precommit": "aesir lint -p -s -m in-staged",
+        "format:in-staged": "aesir format -S -m in-staged"
       },
       devDependencies: EXPORT_DEV_DEPENDENCE,
     })
