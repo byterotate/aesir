@@ -1,5 +1,5 @@
 {
-  "name": "aesir-eslint-config-mandatory",
+  "name": "eslint-config-aesir-mandatory",
   "version": "0.0.8",
   "description": "eslint strict",
   "main": "index.js",

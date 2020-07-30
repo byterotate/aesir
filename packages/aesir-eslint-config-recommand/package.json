@@ -1,5 +1,5 @@
 {
-  "name": "aesir-eslint-config-recommand",
+  "name": "eslint-config-aesir-recommand",
   "version": "0.0.8",
   "description": "eslint config",
   "main": "index.js",
