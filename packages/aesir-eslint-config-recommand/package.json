@@ -1,6 +1,6 @@
 {
   "name": "aesir-eslint-config-recommand",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "eslint config",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,6 @@
   },
   "peerDependencies": {
     "eslint": ">=3.19.0"
-  }
+  },
+  "gitHead": "aac872f5854d2f10a226fc2738807a04012e374c"
 }

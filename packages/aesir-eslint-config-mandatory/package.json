@@ -1,6 +1,6 @@
 {
   "name": "aesir-eslint-config-mandatory",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "eslint strict",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,6 @@
     "eslint": ">=3.19.0"
   },
   "author": "guoyunlong@didichuxing.com",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "aac872f5854d2f10a226fc2738807a04012e374c"
 }

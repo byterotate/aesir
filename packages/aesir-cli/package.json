@@ -1,6 +1,6 @@
 {
   "name": "aesir-cli",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "cli for code quality",
   "main": "index.js",
   "bin": {
@@ -42,5 +42,6 @@
     "@types/node": "^8.0.20",
     "diff": "^3.4.0",
     "typescript": "^2.4.2"
-  }
+  },
+  "gitHead": "aac872f5854d2f10a226fc2738807a04012e374c"
 }
