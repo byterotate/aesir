@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aesir-mandatory",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "eslint strict",
   "main": "index.js",
   "scripts": {
