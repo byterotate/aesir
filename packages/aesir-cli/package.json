@@ -17,8 +17,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aesir-eslint-config-mandatory": "^0.0.4",
-    "aesir-eslint-config-recommand": "^0.0.4",
+    "aesir-eslint-config-mandatory": "^0.0.3",
+    "aesir-eslint-config-recommand": "^0.0.2",
     "bluebird": "^3.5.0",
     "chalk": "^2.1.0",
     "commander": "^2.11.0",
