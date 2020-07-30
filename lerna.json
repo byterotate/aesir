@@ -2,8 +2,15 @@
   "lerna": "2.9.0",
   "command": {
     "publish": {
-      "allowBranch": ["master", "release_*", "release"],
-      "ignoreChanges": ["*.md","lerna.json"],
+      "allowBranch": [
+        "master",
+        "release_*",
+        "release"
+      ],
+      "ignoreChanges": [
+        "*.md",
+        "lerna.json"
+      ],
       "registry": "https://registry.npmjs.org/"
     },
     "npmClientArgs": [
@@ -13,5 +20,5 @@
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.0"
+  "version": "0.0.4"
 }
