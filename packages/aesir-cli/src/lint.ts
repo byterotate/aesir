@@ -35,7 +35,7 @@ function cascadeConfigHandler (config) {
     rules,
     extends:any,
     globals,
-    ...restConfig,
+    ...restConfig
   } = config
   return {
     ...restConfig,

@@ -66,7 +66,7 @@ export class FormatVue {
       const replaceStr = file.replace(/<script>([\s\S]*)<\/script>/g, function (match, $1) {
         match
         const formatStr = prettier.format($1, me.formatConfig)
-        return `<script>\r${formatStr}\r</script>`
+        return `<script>\n${formatStr}\n</script>`
       })
       Fs.writeFileSync(fileName, replaceStr, {
         encoding: 'utf8'
