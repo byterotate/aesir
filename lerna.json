@@ -1,5 +1,15 @@
 {
   "lerna": "2.9.0",
+  "command": {
+    "publish": {
+      "allowBranch": ["master", "release_*", "release"],
+      "ignoreChanges": ["*.md","lerna.json"],
+      "registry": "https://registry.npmjs.org/"
+    },
+    "npmClientArgs": [
+      "--no-package-lock"
+    ]
+  },
   "packages": [
     "packages/*"
   ],
